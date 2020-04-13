@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <input type="text" name="nome" id="input">
+  <button onClick="adicionar()">Adicionar</button>
+  <ul id="lista">
+
+  </ul>
+
+    <script>
+       
+       const adicionar = () => {
+        let input = document.getElementById('input').value;
+        let lista = document.createElement('li');
+        lista.innerText = `${input}`;
+        document.body.appendChild(lista);
+        document.getElementById("input").value = "";
+       }
+  
+    </script>
+</body>
+</html>
